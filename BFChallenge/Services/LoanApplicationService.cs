@@ -16,5 +16,4 @@ public class LoanApplicationService : ILoanApplicationService
     {
         repository.Save(loanApplication);
     }
-
 }

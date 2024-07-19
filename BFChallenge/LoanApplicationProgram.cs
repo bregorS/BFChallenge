@@ -48,21 +48,25 @@ internal class LoanApplicationProgram
             var (result, errorMessage) = _loanValidatorService.Validate(loanApplication);
 
             if (result)
-            { 
+            {
                 loanApplication.Approve();
                 Console.WriteLine("Congratulations.  Your loan application was successful.");
                 Console.WriteLine();
+                Console.WriteLine();
             }
             else
-            { 
+            {
                 loanApplication.Decline();
                 Console.WriteLine("Sorry.  Your loan application was declined.");
                 Console.WriteLine(errorMessage);
+                Console.WriteLine();
                 Console.WriteLine();
             }
 
             _loanService.Save(loanApplication);
             Console.WriteLine(_loanReportingService.GenerateLoanSummaryReport());
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }

@@ -1,9 +1,8 @@
 ﻿using BFChallenge.Domain;
 
-namespace BFChallenge.Services
+namespace BFChallenge.Services;
+
+public interface ILoanApplicationService
 {
-    public interface ILoanApplicationService
-    {
-        void Save(LoanApplication loanApplication);
-    }
+    void Save(LoanApplication loanApplication);
 }

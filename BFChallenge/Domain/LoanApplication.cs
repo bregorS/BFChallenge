@@ -24,8 +24,8 @@ public class LoanApplication
 
     public void Approve()
     {
-        // Not in the spec but is usual to protect state changes
-        if (Status == LoanStatusPending) 
+        // Not in the spec but it is usual to protect state changes
+        if (Status != LoanStatusPending) 
             throw new ArgumentOutOfRangeException(nameof(Status), "Status must be pending before approval");
 
         Status = LoanStatusApproved;
@@ -33,8 +33,8 @@ public class LoanApplication
 
     public void Decline()
     {
-        // Not in the spec but is usual to protect state changes
-        if (Status == LoanStatusDeclined)
+        // Not in the spec but it is usual to protect state changes
+        if (Status != LoanStatusPending)
             throw new ArgumentOutOfRangeException(nameof(Status), "Status must be pending before declining");
 
         Status = LoanStatusDeclined;
