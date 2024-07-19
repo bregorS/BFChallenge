@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BFChallenge", "BFChallenge\BFChallenge.csproj", "{47CEA3C9-AA4D-4792-80A9-A8360999D42A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFChallenge.Tests", "BFChallenge.Tests\BFChallenge.Tests.csproj", "{96110F10-F44B-4926-9C27-33C70F0E83E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47CEA3C9-AA4D-4792-80A9-A8360999D42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CEA3C9-AA4D-4792-80A9-A8360999D42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CEA3C9-AA4D-4792-80A9-A8360999D42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CEA3C9-AA4D-4792-80A9-A8360999D42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96110F10-F44B-4926-9C27-33C70F0E83E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96110F10-F44B-4926-9C27-33C70F0E83E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96110F10-F44B-4926-9C27-33C70F0E83E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96110F10-F44B-4926-9C27-33C70F0E83E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D2A8D2F-F1C3-4EC7-A577-CAC9947EC9FD}
+	EndGlobalSection
+EndGlobal
