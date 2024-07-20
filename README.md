@@ -1,5 +1,19 @@
 # Coding Challenge for BF
 
+## Improvements
+
+- Create a service with the responsibility of create a `LoanApplication`
+  - Use this within the `Run` procedure of the `LoanApplicationProgram` 
+- Create a service which gets the individual loan properties and would replace the Read and Write console commands
+  - Use this within the Use this within the `Run` procedure of the `LoanApplicationProgram` 
+- Refactor `InputHelper` to be non static
+  - Use the new service from above to read and write from the console (or from a mocked implementation)
+  - This would allow `InputHelper` to be unit tested
+
+- Add tests around the `LoanReportingService` mocking the repo and testing the output is as expected
+- Add tests around the `Run` procedure once all dependencies have been made mockable
+- Add BDD (maybe?) tests around the whole application testing boundary and edge cases for the expected behaviour
+
 
 
 ## Original Spec below
