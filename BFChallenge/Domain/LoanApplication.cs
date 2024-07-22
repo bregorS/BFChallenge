@@ -15,10 +15,10 @@ public class LoanApplication
         Status = LoanStatusPending;
     }
 
-    public Guid Id { get; set; }
-    public decimal LoanAmount { get; set; } 
-    public decimal AssetValue { get; set; }
-    public int CreditScore { get; set; }
+    public Guid Id { get; }
+    public decimal LoanAmount { get; } 
+    public decimal AssetValue { get; }
+    public int CreditScore { get; }
     public string Status { get; private set; }
     public double LoanToValue => Convert.ToDouble(LoanAmount / AssetValue);
 
