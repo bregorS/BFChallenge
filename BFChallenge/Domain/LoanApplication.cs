@@ -21,6 +21,8 @@ public class LoanApplication
     public int CreditScore { get; }
     public string Status { get; private set; }
     public double LoanToValue => Convert.ToDouble(LoanAmount / AssetValue);
+    public bool IsApproved => Status.Equals(LoanStatusPending, StringComparison.InvariantCultureIgnoreCase);
+    public bool IsDeclined => Status.Equals(LoanStatusDeclined, StringComparison.InvariantCultureIgnoreCase);
 
     public void Approve()
     {
